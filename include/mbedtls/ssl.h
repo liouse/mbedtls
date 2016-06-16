@@ -1780,9 +1780,9 @@ void mbedtls_ssl_conf_sig_hashes( mbedtls_ssl_config *conf,
 
 #if defined(MBEDTLS_X509_CRT_PARSE_C)
 /**
- * \brief          Set the hostname for verification against the received server
- *                 certificate. It sets the ServerName TLS extension too if it
- *                 is enabled.
+ * \brief          Set the hostname to check against the received server
+ *                 certificate. It sets the ServerName TLS extension too, 
+ *                 if the extension is enabled.
  *                 (client-side only)
  *
  * \param ssl      SSL context
